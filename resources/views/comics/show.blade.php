@@ -7,18 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Show</h1>
-    <div>
-        <h2>Title: {{$comic->title}}</h2>
-        <img src="{{$comic->thumb}}" alt="thumb">
+    <header></header>
+    <main>
+        <h1>Show</h1>
         <div>
-            <h5>Description</h5>
-            <p>{{$comic->description}}</p>
+            <h2>Title: {{$comic->title}}</h2>
+            <img src="{{$comic->thumb}}" alt="thumb">
+            <div>
+                <h5>Description</h5>
+                <p>{{$comic->description}}</p>
+            </div>
+            <div>
+                <h5>Price</h5>
+                <p>{{$comic->price}} $</p>
+            </div>
         </div>
-        <div>
-            <h5>Price</h5>
-            <p>{{$comic->price}} $</p>
-        </div>
-    </div>
+    </main>
+    <footer></footer>
 </body>
 </html>

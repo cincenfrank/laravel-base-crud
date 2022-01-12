@@ -7,12 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Index</h1>
-    <h3>Comics List</h3>
-    <ul>
-        @foreach($comics as $comic)
-        <li><a href="{{route("comics.show",$comic["id"])}}">{{$comic["title"]}}</a></li>
-        @endforeach
-    </ul>
+    <header></header>
+    <main>
+        <h1>Index</h1>
+        <h3>Comics List</h3>
+        <ul>
+            @foreach($comics as $comic)
+            <li><a href="{{route("comics.show",$comic["id"])}}">{{$comic["title"]}}</a></li>
+            @endforeach
+        </ul>
+    </main>
+    <footer></footer>
 </body>
 </html>
