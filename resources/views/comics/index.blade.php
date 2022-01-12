@@ -10,6 +10,7 @@
     <header></header>
     <main>
         <h1>Index</h1>
+        <a href="{{route("comics.create")}}">Add New Comic</a>
         <h3>Comics List</h3>
         <ul>
             @foreach($comics as $comic)

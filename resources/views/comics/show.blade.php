@@ -10,6 +10,7 @@
     <header></header>
     <main>
         <h1>Show</h1>
+        <a href="{{route("comics.index")}}">Back to List</a>
         <div>
             <h2>Title: {{$comic->title}}</h2>
             <img src="{{$comic->thumb}}" alt="thumb">

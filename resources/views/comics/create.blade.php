@@ -10,6 +10,7 @@
     <header></header>
     <main>
         <h1>Create</h1>
+        <a href="{{route("comics.index")}}">Back to List</a>
         <form action="{{route("comics.store")}}" method="post">
             @csrf
             <label for="inputTitle">Title</label>
